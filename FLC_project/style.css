@@ -10,6 +10,7 @@ body{
   padding: 0;
   background: linear-gradient(120deg,#ef1bd6, #e6f01f);
   height: 100vh;
+  background: url(backimg3.webp);
   overflow: hidden;
 }
 .center{
@@ -18,7 +19,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  background: white;
+  background: url(back5.webp);
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
 }
