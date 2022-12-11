@@ -1,0 +1,37 @@
+#title {
+    background-color:#59C1BD;
+    color:#fff;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold ;
+    font-size: 3em;
+    line-height: 1.5;
+}
+.container-fluid{
+    padding: 3% 7%;
+}
+.butns{
+    margin-top: 0;
+}
+.navbar-brand{
+    font-family: 'ubuntu';
+    font-weight: bold;
+    font-size: 2em;
+}
+.navbar-item{
+    padding:0 12px;
+}
+.btn{
+    padding: 0 15px;
+    margin: 0 5px;
+}
+.title-img{
+width: 70%;
+margin-left: 125px;
+
+transform: rotate(15deg);
+}
+.row{
+    height: 200px;
+}
