@@ -1,0 +1,34 @@
+body{
+    margin: 50px 0 60px 0;
+   
+    background-color: slateblue;
+    background-size: 50%;
+}
+.box{
+    height: auto;
+   
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px dashed #090c5a;
+    border-radius: 10px;
+    width:max-content;
+    margin: 0 auto auto 100px;
+    padding: 25px 200px 50px 50px ;
+    font-size: larger;
+    background-color: #beb492fb;
+}
+h3{ 
+    margin: 25px 0 10px 0;
+}
+.Download input{
+    margin: 0px 0 20px 100px;
+    padding: 10px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: black;
+    width: 120px;
+    border-radius: 20px;
+}
+.Download input:hover{
+    color: black;
+    background-color: white;
+}
