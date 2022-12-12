@@ -75,3 +75,7 @@ h1{
     width: 100px;
     border-radius: 20px;
 }
+.Home:hover{
+    color: black;
+    background-color: white;
+}
