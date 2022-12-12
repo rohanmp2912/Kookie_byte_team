@@ -66,3 +66,12 @@ h1{
     color: black;
     background-color: white;
 }
+.Home {
+	margin: 25px 0 20px 0;
+    padding: 10px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: black;
+    width: 100px;
+    border-radius: 20px;
+}

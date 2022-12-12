@@ -2,21 +2,17 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title> Animated Form | Nothing4us </title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Login/SignUp Admission Form | Kookie-Byte </title>
+  <link rel="stylesheet" href="LoginPage.css">
   
 	<meta charset="UTF-8">
-	<title>AnimaForm</title>
+	<title>Admission Form</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-   
-    
-
-
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <section class="forms-section">
-  <h1 class="section-title">Animated Forms</h1>
+  <h1 class="section-title"> Admission Form</h1>
   <div class="forms">
     <div class="form-wrapper is-active">
       <button type="button" class="switcher switcher-login">
@@ -25,17 +21,18 @@
       </button>
       <form class="form form-login">
         <fieldset>
-          <legend>Please, enter your email and password for login.</legend>
+          <legend>Please, enter your username and password for login.</legend>
           <div class="input-block">
-            <label for="login-email">E-mail</label>
-            <input id="login-email" type="email" required>
+            <label for="login-username">Username</label>
+            <input id="login-username" type="text" >
           </div>
           <div class="input-block">
             <label for="login-password">Password</label>
-            <input id="login-password" type="password" required>
+            <input id="login-password" type="password" >
           </div>
         </fieldset>
-        <button type="submit" class="btn-login">Login</button>
+        <a href="/Kookie-Byte/FLC_project/box.html">
+        <button type="submit" class="btn-login">Login</button></a>
       </form>
     </div>
     <div class="form-wrapper">
@@ -45,27 +42,28 @@
       </button>
       <form class="form form-signup">
         <fieldset>
-          <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+          <legend>Please, enter your username, password and password confirmation for sign up.</legend>
           <div class="input-block">
-            <label for="signup-email">E-mail</label>
-            <input id="signup-email" type="email" required>
+            <label for="signup-username">Username</label>
+            <input id="signup-username" type="text" >
           </div>
           <div class="input-block">
             <label for="signup-password">Password</label>
-            <input id="signup-password" type="password" required>
+            <input id="signup-password" type="password" >
           </div>
           <div class="input-block">
             <label for="signup-password-confirm">Confirm password</label>
-            <input id="signup-password-confirm" type="password" required>
+            <input id="signup-password-confirm" type="password" >
           </div>
         </fieldset>
-        <button type="submit" class="btn-signup">Continue</button>
+        <a href="/Kookie-Byte/FLC_project/box.html">
+        <button type="submit" class="btn-signup">Continue</button></a>
       </form>
     </div>
   </div>
 </section>
 <!-- partial -->
-  <script  src="./script.js"></script>
+  <script  src="./Login.js"></script>
 
 </body>
 </html>

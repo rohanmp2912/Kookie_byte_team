@@ -27,10 +27,10 @@ h1{
     margin: 0 5px;
 }
 .title-img{
-width: 70%;
+width: 65%;
 margin-left: 125px;
 
-transform: rotate(15deg);
+transform: rotate(0deg);
 }
 .row{
     height: 200px;
