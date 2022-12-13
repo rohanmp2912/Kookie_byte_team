@@ -1,11 +1,12 @@
-/* body
-{
-    background-color: pink;
-} */
+ body
+{   margin: 50px 0 60px 100px;
+    background-color: rgb(18, 116, 67);
+} 
 #study_temp
 {
     display:none;
 }
 .background{
     background-color:rgba(215, 241, 48, 0.333);
+    border-color: black;
 }
