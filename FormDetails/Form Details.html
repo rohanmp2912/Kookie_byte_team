@@ -9,14 +9,23 @@
 </head>
 <body>
     <fieldset>
-    <legend><b><h2>Admission Details</h2> </b></legend>
+    <legend><h2>Admission Details</h2></legend>
 <form method="get"><b>
+    <div class="textpart">
     <p>First Name * :
-    <input type="text" name="fname" required></p>
+    <input type="text" name="fname" required placeholder="Enter your First name"></p>
     <p>Last Name *:
-    <input type="text" name="lname"></p>
+    <input type="text" name="lname" placeholder="Enter your last name" ></p>
+    <p>Father Name *:
+        <input type="text" name="fathername" placeholder="Enter your father's name"></p>
+    <p>Mother Name *:
+        <input type="text" name="mothername" placeholder="Enter your mother's name"></p>
+
+    </div>
+    <div class="datepart">
     <p><b>Date Of Birth : <input type="date" name="date" id="date"></b></p>
-   
+    </div>
+    <div class="radiopart">
          Select Gender<br>
         <input type="radio" id="male" name="gender" value="male" required>
         <table for="male">Male</table> 
@@ -25,7 +34,7 @@
         <input type="radio" id="male" name="gender" value="male" required>
         <table for="others">Others</table> 
     </b>
-       
+    </div>
     
  
     <p> <b>Address :*</b></p>
@@ -37,8 +46,9 @@
         <option value="Davangere">Chittradurga</option>
         <option value="Davangere">mysore</option>
         <option value="Davangere">Mandya</option>
+        <option value="Davangere">Karwar</option>
         <option value="Davangere">Chikkamagalur</option>
-        <option value="Davangere">Davangere</option>
+        <option value="Davangere">Coorg</option>
         <option value="Davangere">Mangalore</option>
         <option value="Davangere">Udupi</option>
         <option value="Davangere">Bangalore</option>
