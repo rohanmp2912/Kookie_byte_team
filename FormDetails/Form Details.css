@@ -5,18 +5,39 @@ legend{
     text-align: center;
     text-decoration: underline;
 }
+fieldset
+{
+    padding: 20px 70px 20px 80px ;
+}
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #a63c06;
     text-shadow: 0px 0px 2px black;
 }
+.textpart , .numberpart ,.selectpart ,.radiopart ,.datepart {
+    margin: 10px 0 25px 0;
+    font-size: larger;
+}
+.textpart:hover , .numberpart:hover ,.selectpart:hover  ,.datepart:hover{
+    text-decoration: underline;
+ color: rgb(21, 123, 68);
+}
+.textpart input ,.datepart input ,.numberpart input{
+    width: 300px;
+    margin-top: 4px;
+    padding: 5px;
+    border: 1px soild black;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 4px 4px #d49a13;
+}
 .submission input{
-    margin: 25px 0 20px 0;
+    margin: 25px 0 20px 50px;
     padding: 10px;
     font-weight: bolder;
     color: aliceblue;
     background-color: black;
-    width: 100px;
+    width: 160px;
     border-radius: 20px;
 }.submission input:hover{
     color: black;
