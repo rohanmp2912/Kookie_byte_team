@@ -8,6 +8,7 @@ legend{
 fieldset
 {   background-color: #fff2b2;
     padding: 20px 70px 20px 80px ;
+    border: 3px dotted black;
 }
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
