@@ -4,41 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EditForm</title>
+    <title>Editing the Form </title>
     <link rel="stylesheet" href="EditForm.css">
 </head>
 <body>
     <fieldset>
-    <legend><b><h2>Edit Form</h2> </b></legend>
+    <legend><h2>Admission Details</h2></legend>
 <form method="get"><b>
-    <p>First Name * :
-    <input type="text" name="fname" required></p>
+    Edit the following details
+    <div class="textpart">
+        <p>First Name * :
+    <input type="text" name="fname" required placeholder="Edit your First name"></p></div>
+    <div class="textpart">
     <p>Last Name *:
-    <input type="text" name="lname"></p>
-    <p><b>Date Of Birth : <input type="date" name="date" id="date"></b></p>
-    <fieldset>
-        <legend>select Gender</legend>
-        <input type="radio" id="male" name="gender" value="male" required>
-        <table for="male">Male</table> 
-        <input type="radio" id="male" name="gender" value="male" required>
-        <table for="female">Female</table> 
-        <input type="radio" id="male" name="gender" value="male" required>
-        <table for="others">Others</table> 
+    <input type="text" name="lname" placeholder="Edit your last name" ></p></div>
+    <div class="textpart">
+    <p>Father Name *:
+        <input type="text" name="fathername" placeholder="Edit your father's name"></p></div>
+        <div class="textpart">
+    <p>Mother Name *:
+        <input type="text" name="mothername" placeholder="Edit your mother's name"></p></div>
+
+    </div>
+    <div class="datepart">
+    <p>Date Of Birth : <input type="date" name="date" id="date"></b></p>
+    </div>
+    <div class="radiopart">
+        <b>Select Gender<br>
+         <div class="radioitem">
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label> 
+         </div>
+         <div class="radioitem">
+        <input type="radio" id="female" name="gender" >
+        <label for="female">Female</label> </div>
+        <div class="radioitem">
+        <input type="radio" id="others" name="gender">
+        <label for="others">Others</label> </div>
     </b>
-       
-    </fieldset>
- 
-    <p> <b>Address :*</b></p>
+        
+    
+    </div>
+    
+    <div class="textpart">
+    <p> <b>Address :*</b></p></div>
+    
     <textarea name="adresss" id="" cols="90" rows="10"></textarea required>
-    <p><b>select your Place</B>
+      <div class = "selectpart"> <p><b>Select your Place</b></p></div>
+    <div class="selectspart">
     <select  id="">
-        <option value=""><b>--Select Place--</b></option>
+        <option value="">--Select Place--</option>
         <option value="Davangere">Davangere</option>
         <option value="Davangere">Chittradurga</option>
         <option value="Davangere">mysore</option>
         <option value="Davangere">Mandya</option>
+        <option value="Davangere">Karwar</option>
         <option value="Davangere">Chikkamagalur</option>
-        <option value="Davangere">Davangere</option>
+        <option value="Davangere">Coorg</option>
         <option value="Davangere">Mangalore</option>
         <option value="Davangere">Udupi</option>
         <option value="Davangere">Bangalore</option>
@@ -47,12 +69,15 @@
         <option value="Davangere">Dakshina Kannada</option>
         <option value="Davangere">Hubli</option>
         <option value="Davangere"> Dharwad</option>
-    </select></p>
-    <p><b>E-mail* : </b> <input type="email" name="email" id="email" required></p>
-    <p><b>Pin-code * : </b><input type="number" name="email" id="email" required></p>
+    </select></p></div>
+    <div class="textpart">
+    <p><b>E-mail* : </b> <input type="email" name="email" id="email" required placeholder="Edit your email"></p></div>
+    <div class="numberpart">
+    <p><b>Pin-code * : </b><input type="number" name="email" id="email" required placeholder="Edit here"></p></div>
     <div class="submission">
         <input type="submit" value="Submit">
       </div>  
 </form>
-</fieldset>
+    </fieldset>
 </body>
+</html>
