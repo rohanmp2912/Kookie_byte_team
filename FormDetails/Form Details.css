@@ -18,11 +18,12 @@ h2{
     padding: 4px;
     border: 1px solid black;
 }
-.textpart , .numberpart ,.radiopart,.selectpart ,.datepart {
+.textpart , .numberpart ,.radiopart ,.selectpart ,.datepart {
     margin: 10px 0 25px 0;
     font-size: larger;
+    font-style: bolder;
 }
-.textpart:hover , .numberpart:hover ,.datepart:hover{
+.textpart:hover , .numberpart:hover ,.datepart:hover ,.radioitem:hover{
     text-decoration: underline;
  color: rgb(21, 123, 68);
 }
@@ -49,6 +50,13 @@ box-shadow: 2px 2px rgb(43, 41, 41);
     color: rgb(9, 26, 49);
     background: white;
     font-style: bolder;
+}
+
+.radioitem label{
+
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
 }
 .submission input{
     margin: 25px 0 20px 50px;
