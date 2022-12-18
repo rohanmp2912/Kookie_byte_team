@@ -49,9 +49,17 @@ margin: 30px;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
-    
+     border: 5px dotted #210a7b;
+    box-shadow: #03a9f4;
+    box-sizing: border-box;
+    animation: rotate 5s linear ;
 
 
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(1turn);
+    }
 }
 .container .card:hover .box{
     transform:translateY(-50%px);
