@@ -1,0 +1,66 @@
+body{
+    background-color: #CCD6A6;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 400px;
+    background-color: #FFFBE9;
+    border-radius: 8px;
+}
+.center h1{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom:2px solid #CCD6A6 ;
+    
+}
+.form{
+    padding-bottom: 20px;
+    margin: 0 20px;
+    text-align: center;
+}
+.textfield{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border:1px solid #CCD6A6;
+    border-spacing: border-box;
+    border-radius: 8px; 
+    margin: 7px 0;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    background-color: #CCD6A6;
+    border-radius: 8px;
+    font-size: 20px;
+    margin: 7px 0;
+    color: aliceblue;
+    border: 0;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #DAE2B6;
+}
+.forgetpass{
+    font-size: 16px;
+    padding: 4px 0;
+}
+.link
+{
+    font-style: none;
+    color: #CCD6A6;
+    text-decoration: none; 
+}
+.link:hover{
+    color: #DAE2B6;
+   
+}
+@media (max-width: 470px)
+{
+    .center{
+        width:88%;
+    }
+}
