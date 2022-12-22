@@ -16,6 +16,7 @@ h1{
     100%{
         background-position: 2000px 0;
     }
+}
 .container-fluid{
     padding: 3% 7%;
 }
@@ -42,4 +43,38 @@ transform: rotate(0deg);
 }
 .row{
     height: 200px;
+}
+.dashboards ,.contactsus ,.aboutUs{
+    width: 100%; 
+    padding: 30px;
+}
+.dashboards{
+    width: 100%;
+   border: 2px solid black;
+    padding: 30px;
+    margin: 50px 0 60px 0;
+}
+.contactsus{
+    background-color: #86d169;
+    color: aliceblue;
+    padding: 15px;
+}
+.contactsus dd,.contactsus dt{
+    margin: 1%;
+}
+.tphone dd::before{
+    content: "\1F57F";
+    margin-right: 10px;
+}
+.what dd::before{
+    content: url("whatsapplogo.png");
+    margin-right: 10px;
+}
+.em dd::before{
+    content: "\1F4E7";
+    margin-right: 10px;
+}
+.discord dt::before{
+    content: url("discordlogo.png");
+    margin-right: 10px;
 }
