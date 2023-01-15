@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pinyon+Script|Rochester');
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,700');
+.cursive {
+  font-family: 'Pinyon Script', cursive;
+}
+
+.sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.block {
+  display: block;
+}
+
+.underline {
+  border-bottom: 1px solid #777;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+
+
+body{
+    background: #ABCDEF;
+  font-family: Assistant, sans-serif;
+  display: flex;
+  min-height: 90vh;
+}
+.center{
+    color: white;
+  background:  #136a8a;
+  background: 
+    -webkit-linear-gradient(to right, #267871, #136a8a);
+  background: 
+    linear-gradient(to right, #267871, #136a8a);
+  margin: auto;
+  box-shadow: 
+    10px 20px 10px rgba(0,0,0,0.2), 
+    20px 10px 20px rgba(0,0,0,0.3), 
+    10px 30px 60px 1px rgba(0,0,0,0.5);
+  border-radius: 20px;
+  padding:  35px 145px 35px 100px;
+}
+.center h1{
+    display: flex;
+    float: center;
+  justify-content: center;
+  font-size: 2.2em;
+    
+}
+.form{
+  
+    padding-bottom: 2px;
+    margin: 10px 5px 10px;
+    
+    
+    
+}
+.textfield{
+  
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px white;
+  width: 125%;
+  color: white;
+  
+  
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.textfield::placeholder
+{
+    color: #D3D3D3;
+}
+.btn{
+  background: none;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0px 0px 0px 2px white;
+  border-radius: 3px;
+  padding: 5px 2em;
+  transition: 0.5s;
+  border: none;
+}
+.btn:hover{
+    background: white;
+  color: dimgray;
+  transition: 0.5s;
+}
+.forgetpass{
+    font-size: 16px;
+    padding: 4px 0px;
+    text-decoration: none;
+    float: right;
+  color: white;
+  float: right;
+}
+.link
+{
+    font-style: none;
+    color: #CCD6A6;
+    text-decoration: none; 
+}
+.link:hover{
+    color: #DAE2B6;
+   
+}
+
+input:autofill{
+  background: transparent;
+}
+input:-internal-autofill-selected {
+  background-color: none;
+}

@@ -1,0 +1,81 @@
+body{
+    margin: 50px 0 60px 0;
+   
+    background-image: linear-gradient(#a4133c, #560bad);
+    background-size: contain;
+}
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: azure;
+    text-shadow: 2px 2px 0px black;
+    font-size: 50px;
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+.box{
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px dashed #090c5a;
+    border-radius: 10px;
+    width:max-content;
+    margin: 0 auto 100px auto;
+    padding: 25px 80px 30px 80px ;
+    font-size: larger;
+    background-color: #b6ad90;
+}
+.markcard ,.aadharcard ,.birthcertificate ,.income ,.Photo{
+    display: block;
+    margin: 10px 0 20px 0;
+}
+.markcard:hover,.aadharcard:hover,.birthcertificate:hover,.income:hover,.Photo:hover{
+    text-decoration: underline;
+    color: rgb(162, 25, 235);
+}
+.filebox{
+    margin-top: 10px;
+    font-size: 16px;
+    background: white;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px black;
+    width: 400px;
+    outline: none;
+}
+::-webkit-file-upload-button{
+    color: white;
+    background: #206a5d;
+    padding: 7px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 1px 0 1px #6b4559;
+    outline: none;
+}
+::-webkit-file-upload-button:hover{
+    background: #181046;
+    
+}
+.submission input{
+    margin: 25px 0 20px 0;
+    padding: 10px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: black;
+    width: 100px;
+    border-radius: 20px;
+}
+.submission input:hover{
+    color: black;
+    background-color: white;
+}
+.Home {
+	margin: 25px 0 20px 0;
+    padding: 10px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: black;
+    width: 100px;
+    border-radius: 20px;
+}
+.Home:hover{
+    color: black;
+    background-color: white;
+}

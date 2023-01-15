@@ -1,3 +1,10 @@
+<?php
+include("applylink.php");
+error_reporting(0);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +17,7 @@
 <body>
     <fieldset>
     <legend><h2>Admission Details</h2></legend>
-<form method="get"><b>
+<form action ="applylink.php" method="POST"><b>
     <div class="textpart">
         <p>First Name * :
     <input type="text" name="fname" required placeholder="Enter your First name"></p></div>
@@ -31,14 +38,14 @@
     <div class="radiopart">
         <b>Select Gender<br>
          <div class="radioitem">
-        <input type="radio" id="male" name="gender">
+        <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label> 
          </div>
          <div class="radioitem">
-        <input type="radio" id="female" name="gender" >
+        <input type="radio" id="female" name="gender" value="female" >
         <label for="female">Female</label> </div>
         <div class="radioitem">
-        <input type="radio" id="others" name="gender">
+        <input type="radio" id="others" name="gender" value="others">
         <label for="others">Others</label> </div>
     </b>
     <div class="numberpart">
@@ -49,11 +56,11 @@
     <div class="textpart">
     <p> <b>Address :*</b></p></div>
     
-    <textarea name="adresss" id="" cols="90" rows="10"></textarea required>
+    <textarea name="address" id="" cols="90" rows="10"></textarea required>
 
     <div class = "selectpart"> <p><b>Select your City</b></p></div>
     <div class="selectspart">
-    <select  id="">
+    <select  id="disrict" name="district">
         <option value="">--Select city--</option>
         <option value="Davangere">Davangere</option>
         <option value="Chittradurga">Chittradurga</option>
@@ -76,14 +83,12 @@
      <div class = "selectpart"> <p><b>Select Your State</b></p></div>
       <div class="selectspart">
     <div class="selectspart">
-        <select  id="">
+        <select  id="state" name="state">
             <option value="">--Select State--</option>
             <option value="Karnataka">Karnataka</option>
             <option value="Tamil Nadu">Tamil Nadu</option>
             <option value="Kerala">Kerala</option>
             <option value="Andhra Pradesh">Andhra Pradesh</option>
-            <option value="Goa">Goa</option>
-            <option value="Haryana">Haryana</option>
             <option value="Delhi">Delhi</option>
             <option value="Maharashtra">Maharashtra</option>
             <option value="Madhya Pradesh">Madhya Pradesh</option>
@@ -91,25 +96,25 @@
             <option value="Bihar">Bihar</option>
             <option value="Gujarat">Gujarat</option>
             <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-            <option value="Punjab">Punjab</option>
+            <option value="Punjab">Panjab</option>
             <option value="Rajasthan">Rajasthan</option>
             <option value="Telangana">Telangana</option>
             <option value="Uttar Pradesh">Uttar Pradesh</option>
         </select></p></div>
 
     <div class="textpart">
-    <p><b>Country * :</b> <input type="text" name="Country" required placeholder="Enter your Nationality"></p></div>
+    <p><b>Country * :</b> <input type="text" name="country" required placeholder="Enter your Nationality"></p></div>
     <div class="textpart">
     <p><b>E-mail* : </b> <input type="email" name="email" id="email" required placeholder="Enter your Email"></p></div>
     <div class="numberpart">
-    <p><b>Pin-code * : </b><input type="number" name="email" id="email" required placeholder="Enter your Pin-code"></p></div>
+    <p><b>Pin-code * : </b><input type="number" name="pincode" id="email" required placeholder="Enter your Pin-code"></p></div>
     <div class="textpart">
-    <p><b>Language * :</b> <input type="text" name="Language" required placeholder="Enter your Language"></p></div> 
+    <p><b>Language * :</b> <input type="text" name="language" required placeholder="Enter your Language"></p></div> 
 
     <div class = "selectpart"> <p><b>Educational Qualification</b></p></div>
       <div class="selectspart">
     <div class="selectspart">
-        <select  id="">
+        <select  id="" name="qualify">
             <option value="">--Select --</option>
             <option value="BE">BE</option>
             <option value="BCOM">BCOM</option>
@@ -118,12 +123,12 @@
         </select></p></div>
 
         <div class="textpart">
-            <p><b>College name * :</b> <input type="text" name="College Name" required placeholder="Enter your College Name"></p></div> 
+            <p><b>College name * :</b> <input type="text" name="clgname" required placeholder="Enter your College Name"></p></div> 
 
         <div class="textpart">
          <p> <b>Extra Curricular Activites:*</b></p></div>
                 
-        <textarea name="adresss" id="" cols="60" rows="7"></textarea required>
+        <textarea name="extracaricular" id="" cols="60" rows="7"></textarea required>
            
          <div class="numberpart">
             <p><b>Previous year cgpa/percentage * : </b><input type="number" name="percentage" id="percentage" required placeholder="Enter your CGPA/Percentage"></p></div>   
@@ -131,11 +136,44 @@
         
 
     <div class="submission">
-        <a href="/loginwork/apply.php"><input type="submit" value="Submit"></a>
+        <input type="submit" value="register" name='register'>
       </div> 
-     
-     
-     
-</form>
+     </form>
     </fieldset>
 </body>
+</html>
+<?php
+  if($_POST['register'])
+  {
+    $f_name=$_POST['fname'];
+    $l_name=$_POST['lname'];
+    $father_name=$_POST['fathername'];
+    $mother_name=$_POST['mothername'];
+    $date=$_POST['date'];
+    $gen=$_POST['gender'];
+    $age=$_POST['age'];
+    $ad=$_POST['address'];
+    $dis=$_POST['district'];
+    $state=$_POST['state'];
+    $con=$_POST['country'];
+    $email=$_POST['email'];
+    $pincode=$_POST['pincode'];
+    $lang=$_POST['language'];
+    $qualify=$_POST['qualify'];
+    $clgname=$_POST['clgname'];
+    $extra=$_POST['extracaricular'];
+    $percentage=$_POST['percentage'];
+   $query= "INSERT INTO firstform VALUES('$f_name','$l_name','$father_name','$mother_name','$date','$gen','$age','$ad','$dis','$state','$con','$email','$pincode','$lang','$qualify','$clgname','$extra','$percentage')";
+  $data=mysqli_query($conn,$query);
+
+  if($data)
+  {
+   echo "data is inserted";
+ }
+ else
+ {
+    echo "failed to insert";
+ }
+}
+
+  ?>

@@ -1,0 +1,83 @@
+body{
+    background: #ABCDEF;
+    font-family: Assistant, sans-serif;
+    display: flex;
+    min-height: 90vh;}
+
+.center{
+    color: white;
+  background:  #136a8a;
+  background: 
+    -webkit-linear-gradient(to right, #267871, #136a8a);
+  background: 
+    linear-gradient(to right, #267871, #136a8a);
+  margin: auto;
+  box-shadow: 
+    10px 20px 10px rgba(0,0,0,0.2), 
+    10px 10px 20px rgba(0,0,0,0.3), 
+    10px 30px 60px 1px rgba(0,0,0,0.5);
+  border-radius: 20px;
+  padding: 50px 70px;
+}
+.center h1{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+.form {
+    color: #D3D3D3;
+    
+
+}
+
+
+.textfield {
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px white;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+.textfield::placeholder
+{
+    color: #ffffff;
+}
+.btn{
+  background: none;
+  text-decoration: solid;
+  color: white;
+  box-shadow: 0px 0px 1px 2px white;
+  border-radius: 5px;
+  padding: 5px 2em;
+  transition: 0.5s;
+  float: left;
+}
+
+.btn:hover{
+    background: white;
+    color: dimgray;
+    transition: 0.5s;}
+.forgetpass{
+    text-decoration: none;
+  color: white;
+  float: right;
+}
+.link
+{
+    font-style: none;
+    color: #CCD6A6;
+    text-decoration: none; 
+}
+.link:hover{
+  
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+   
+}

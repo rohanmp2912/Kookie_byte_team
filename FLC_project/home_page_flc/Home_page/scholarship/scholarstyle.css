@@ -1,0 +1,35 @@
+body{
+  
+    margin: 35px;
+    font-size: 25px;
+}
+h2{
+    font-size: 38px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Anton', sans-serif;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 25px;
+    background-color: rgb(126, 122, 122);
+}
+.subbox{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin: 10px 15px 24px 25px;
+    box-shadow: 10px 8px 8px black;
+    padding: 5px 10px 6px 15px;
+}
+.subbox dt:before{
+    content: "\2743";
+    margin-right: 5px;
+}
+.subbox dd::before{
+    content: "\1F511";
+    margin-right: 7px;
+}

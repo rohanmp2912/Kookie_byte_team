@@ -1,0 +1,17 @@
+body{
+  
+    background-color: rgb(143, 219, 222);
+}
+
+.table td
+{   
+    border: 2px solid rgb(52, 55, 83);
+    border-collapse: collapse;
+    
+}
+.table th{
+    text-align: center;
+    color: cornsilk;
+    border-collapse: collapse;
+    background-color: rgb(70, 87, 148);
+}
